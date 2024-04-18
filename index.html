@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="jstest.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="headertxt">
+      <div class="text">
+        <span>ROCK</span><br />
+        <span>PAPER</span><br />
+        <span>SCISSORS</span>
+      </div>
+
+      <div class="scorecard">
+        <div class="sysscore">
+          <p class="scrboard">COMPUTER SCORE</p>
+          <h2 class="scrnumber">0</h2>
+        </div>
+        <div class="userscore">
+          <p class="scrboard">
+            YOUR <br />
+            SCORE
+          </p>
+          <h2 class="scrnumber">0</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="handchoices">
+      <div class="triangle">
+        <img src="Assests/triangle.png " />
+      </div>
+      <div class="handrock">
+        <img src="Assests/rock.png" alt="r" onclick="pickUserHand('rock')" />
+      </div>
+
+      <div class="handscissor">
+        <img
+          src="Assests/scissor.png"
+          alt="s"
+          onclick="pickUserHand('scissor')"
+        />
+      </div>
+
+      <div class="handpaper">
+        <img src="Assests/paper.png" alt="p" onclick="pickUserHand('paper')" />
+      </div>
+    </div>
+
+    <!-- you win page -->
+    <div class="youwin">
+      <div class="scissors1">
+        <p class="you">YOU PICKED</p>
+        <img id="rocku" src="Assests/rock.png" alt="" />
+        <img id="paperu" src="Assests/paper.png" alt="" />
+        <img id="scissoru" src="Assests/scissor.png" alt="" />
+      </div>
+      <div class="centertext">
+        <p class="txt1">YOU WIN</p>
+        <p class="txt2">AGAINST PC</p>
+        <button class="playagain" onclick="playagain()">PLAY AGAIN</button>
+      </div>
+      <div class="paper1">
+        <p class="pc">PC PICKED</p>
+        <img id="rockp" src="Assests/rock.png" alt="" />
+        <img id="paperp" src="Assests/paper.png" alt="" />
+        <img id="scissorp" src="Assests/scissor.png" alt="" />
+      </div>
+    </div>
+
+    <!--   
+    <div class="youlost">
+      <div class="scissors1">
+        <p class="you">YOU PICKED</p>
+        <img src="Assests/paper.png" alt="" />
+      </div>
+      <div class="centertext">
+        <p class="txt1">YOU LOST</p>
+        <p class="txt2">AGAINST PC</p>
+        <button class="playagain">PLAY AGAIN</button>
+      </div>
+      <div class="paper1">
+        <p class="pc">PC PICKED</p>
+        <img src="Assests/scissor.png" alt="" />
+      </div>
+    </div> -->
+
+    <!-- tie up page -->
+    <!-- <div class="tieup">
+      <div class="scissors1">
+        <p class="you">YOU PICKED</p>
+        <img src="Assests/rock.png" alt="" />
+      </div>
+      <div class="centertext">
+        <p class="txt1">TIE UP</p>
+
+        <button class="playagain">Replay</button>
+      </div>
+      <div class="paper1">
+        <p class="pc">PC PICKED</p>
+        <img src="Assests/rock.png" alt="" />
+      </div>
+    </div> -->
+
+    <div class="rulepage">
+      <h1>Game Rules</h1>
+      <div class="rules">
+        <ul>
+          <li>
+            Rock beats scissors, scissors beat paper, and paper beats rock.
+          </li>
+          <br />
+          <li>
+            Agree ahead of time whether you’ll count off “rock, paper, scissors,
+            shoot” or just “rock, paper, scissors.”
+          </li>
+          <br />
+          <li>
+            Use rock, paper, scissors to settle minor decisions or simply play
+            to pass the time
+          </li>
+          <br />
+          <li>
+            If both players lay down the same hand, each player lays down
+            another hand
+          </li>
+          <br />
+        </ul>
+        <button class="clsbtn" onclick="closeButton()">
+          <img src="Assests/closebtn.png" alt="" />
+        </button>
+      </div>
+    </div>
+    <div>
+      <div class="frstpgbtns">
+        <button class="rlsbtn2" onclick="openRules()">RULES</button>
+        <a style="text-decoration: none" href="index1.html">
+          <button class="nxt">NEXT</button>
+        </a>
+      </div>
+    </div>
+    <script src="jstest.js"></script>
+  </body>
+</html>

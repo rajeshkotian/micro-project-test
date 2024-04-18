@@ -1,0 +1,43 @@
+body {
+    background: #8cc461;
+  }
+.stars{
+    margin-left: 31vw;
+    margin-top: 10vh;
+}  
+.cup{
+    margin-left: 42vw;
+    margin-top: -30vh;
+}
+h1{
+    margin-left: 36vw;
+    color: white;
+    font-size: 4rem;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    margin-top: 2vh;
+    letter-spacing: 0.5rem;
+}
+
+h3{
+    margin-left: 36.5vw;
+    color: white;
+    font-size: 1.9rem;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    margin-top: -6vh;
+    letter-spacing: 0.25rem;
+}
+
+.playagain{
+    width: 9rem;
+    border-radius: 0.625rem;
+    border: 2px solid #fff;
+    background: white;
+    height: 2rem;
+    color: #6B6B6B;
+    margin-left: 45vw;
+    margin-top: -1vh;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+  }
